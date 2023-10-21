@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="navBar" class="navbar-white">
+        <a href="index.html">
+            <img src="images/logo-red.png" class="logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Popular Places</a></li>
+            <li><a href="#">Travel Outside</a></li>
+            <li><a href="#">Online Packages</a></li>
+        </ul>
+        <a href="#" class="register-btn">Register Now</a>
+        <i class="fas fa-bars" onclick="togglebtn()"></i>
+    </nav>
+    <div class="container">
+        <div class="list-container">
+            <div class="left-col" id="listings-container">
+                <p>200+ Options</p>
+                <h1>Recommended Places In AirBnb</h1>
+            </div>
+            <div class="right-col">
+                <div class="sidebar">
+                    <h2>Select Filters</h2>
+                    <h3>Property Type</h3>
+                    <div class="filter">
+                        <input type="checkbox">
+                        <p>House</p> <span>(0)</span>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox">
+                        <p>Hostel</p> <span>(0)</span>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox">
+                        <p>Flat</p> <span>(0)</span>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox">
+                        <p>Villa</p> <span>(0)</span>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox">
+                        <p>Guest Suite</p> <span>(0)</span>
+                    </div>
+                    <h3>Amenities</h3>
+                    <div class="filter">
+                        <input type="checkbox">
+                        <p>Air Conditioning</p> <span>(0)</span>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox">
+                        <p>Wifi</p> <span>(0)</span>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox">
+                        <p>Gym</p> <span>(0)</span>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox">
+                        <p>Pool</p> <span>(0)</span>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox">
+                        <p>Kitchen</p> <span>(0)</span>
+                    </div>
+
+                    <div class="sidebar-link">
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <img src="images/arrow.png">
+            <span class="current">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>&middot; &middot; &middot; &middot;</span>
+            <span>20</span>
+            <img src="images/arrow.png" class="right-arrow">
+        </div>
+
+        <div class="footer">
+            <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            <hr>
+            <p>Copyright &copy; 2023, By Priyanka Singh Tomer.</p>
+        </div>
+    </div>
+
+
+    <script>
+        var navBar = document.getElementById("navBar");
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu");
+        }
+    </script>
+    <script src="./script2.js"></script>
+</body>
+
+</html>
