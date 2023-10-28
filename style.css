@@ -790,6 +790,10 @@ nav.navbar-white .fa-bars {
     border-radius: 8px;
 }
 
+#map {
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+}
 /* -----media query for house details page---------- */
 @media only screen and (max-width: 700px) {
     .house-details {
